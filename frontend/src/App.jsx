@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginRegister from './pages/LoginRegister';
+import DashboardPage from './pages/DashboardPage';
 
 import CamerasPage from './pages/CamerasPage';
 
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login-register" element={<LoginRegister />} />
         <Route path="/surveillance" element={<CamerasPage />} />
+        
+        <Route path="/dashboard" element={<DashboardPage />} />
 
         <Route path="/feedback" element={<FeedbackPage />} />
         <Route path="/contact-us" element={<ContactusPage />} />
@@ -31,4 +34,3 @@ function App() {
 }
 
 export default App;
-
